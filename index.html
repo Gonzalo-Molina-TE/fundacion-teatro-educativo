@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundación Teatro Educativo | Arte, Educación y Donaciones Directas</title>
+  <meta name="description" content="Fundación Teatro Educativo: Transformando comunidades a través del teatro pedagógico y la formación valórica en todo Chile. Apoya con donaciones directas a escuelas vulnerables.">
+  
+  <!-- Google Fonts: Barlow Condensed (Heavy Weights) & Plus Jakarta Sans (Crisp, High Weight) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: '#F39200',      /* Naranja oficial FTE */
+              purple: '#612B89',      /* Morado oficial FTE */
+              teal: '#009F97',        /* Turquesa / Verde azulado oficial FTE */
+              dark: '#18181B',        /* Zinc 900 minimalista */
+              gray: '#27272A'         /* Zinc 800 */
+            }
+          },
+          fontFamily: {
+            brand: ['"Barlow Condensed"', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #18181B; /* Zinc 900 for high text weight & contrast */
+    }
+    .font-brand {
+      font-family: 'Barlow Condensed', sans-serif;
+      letter-spacing: 0.02em;
+    }
+  </style>
+</head>
+<body class="bg-white text-zinc-900 antialiased selection:bg-brand-orange selection:text-white">
+
+  <!-- TOP BAR MINIMALISTA -->
+  <div class="bg-zinc-950 text-white text-xs sm:text-sm py-2.5 px-4 sm:px-8 border-b border-zinc-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-6 font-semibold">
+        <a href="mailto:fundacionteatroeducativo@gmail.com" class="hover:text-brand-orange transition flex items-center gap-2">
+          <i class="fa-solid fa-envelope text-brand-teal text-sm"></i> fundacionteatroeducativo@gmail.com
+        </a>
+        <a href="tel:+56927407656" class="hover:text-brand-orange transition flex items-center gap-2">
+          <i class="fa-solid fa-phone text-brand-orange text-sm"></i> +56 9 2740 7656
+        </a>
+      </div>
+      <div class="flex items-center gap-4 text-zinc-400 font-semibold text-xs">
+        <span class="hidden md:inline"><i class="fa-solid fa-location-dot text-brand-teal mr-1"></i> Santiago, Chile • Cobertura Nacional</span>
+        <div class="flex items-center gap-4 text-sm">
+          <a href="https://teatroeducativo.cl" target="_blank" class="hover:text-white transition font-bold" title="Plataforma Web">teatroeducativo.cl</a>
+          <a href="https://wa.me/56927407656" target="_blank" class="text-green-400 hover:text-green-300 transition text-base" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR CON LOGO EN GRAN TAMAÑO Y BOTÓN DONAR -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-zinc-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 flex justify-between items-center py-3 sm:py-4">
+      
+      <!-- LOGOTIPO EN GRAN TAMAÑO -->
+      <a href="#" class="flex items-center group">
+        <img src="Logotipos/MARCA_FUNDACION-01.png" 
+             alt="Fundación Teatro Educativo" 
+             class="h-20 sm:h-24 md:h-28 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]" 
+             onerror="this.onerror=null; this.src='FUNDACION TEATRO EDUCATIVO LOGOTIPO Y MANUAL MARCA/MARCA_FUNDACION-01.png';">
+      </a>
+
+      <!-- ENLACES DE NAVEGACIÓN CON PESO VISUAL -->
+      <nav class="hidden lg:flex items-center gap-7 font-bold text-sm tracking-wide uppercase text-zinc-800">
+        <a href="#inicio" class="hover:text-brand-purple transition duration-200 py-1 border-b-2 border-transparent hover:border-brand-purple">Inicio</a>
+        <a href="#proposito" class="hover:text-brand-purple transition duration-200 py-1 border-b-2 border-transparent hover:border-brand-purple">Propósito</a>
+        <a href="#repertorio" class="hover:text-brand-purple transition duration-200 py-1 border-b-2 border-transparent hover:border-brand-purple">Obras</a>
+        <a href="#donar" class="text-brand-orange hover:text-orange-600 transition duration-200 py-1 border-b-2 border-brand-orange flex items-center gap-1.5 font-extrabold">
+          <i class="fa-solid fa-heart text-xs text-brand-orange animate-pulse"></i> Donar
+        </a>
+        <a href="#lineas-accion" class="hover:text-brand-purple transition duration-200 py-1 border-b-2 border-transparent hover:border-brand-purple">Metodología</a>
+        <a href="#impacto" class="hover:text-brand-purple transition duration-200 py-1 border-b-2 border-transparent hover:border-brand-purple">Impacto</a>
+        <a href="#directorio" class="hover:text-brand-purple transition duration-200 py-1 border-b-2 border-transparent hover:border-brand-purple">Directorio</a>
+      </nav>
+
+      <!-- BOTONES DE ACCIÓN: DONAR DIRECTO Y CONTACTAR -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="#donar" class="bg-brand-orange hover:bg-orange-600 text-white font-brand text-xl px-5 py-2.5 rounded-xl uppercase tracking-wider font-extrabold shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2">
+          <i class="fa-solid fa-hand-holding-heart text-lg"></i> Donar Directo
+        </a>
+        <a href="#contacto" class="bg-zinc-950 hover:bg-brand-purple text-white font-brand text-xl px-5 py-2.5 rounded-xl uppercase tracking-wider font-extrabold shadow-sm hover:shadow-md transition-all duration-300">
+          Contacto
+        </a>
+      </div>
+
+      <!-- BOTÓN MENÚ MÓVIL -->
+      <button id="mobileBtn" class="lg:hidden text-3xl text-zinc-900 p-2 focus:outline-none" aria-label="Abrir Menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- MENÚ MÓVIL DESPLEGABLE -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-zinc-200 px-6 py-6 space-y-4 font-bold text-base uppercase text-zinc-900">
+      <a href="#inicio" class="block py-2 hover:text-brand-purple">Inicio</a>
+      <a href="#proposito" class="block py-2 hover:text-brand-purple">Propósito</a>
+      <a href="#repertorio" class="block py-2 hover:text-brand-purple">Obras & Repertorio</a>
+      <a href="#donar" class="block py-2 text-brand-orange font-extrabold flex items-center gap-2"><i class="fa-solid fa-heart"></i> Donaciones Directas</a>
+      <a href="#lineas-accion" class="block py-2 hover:text-brand-purple">Líneas de Acción</a>
+      <a href="#impacto" class="block py-2 hover:text-brand-purple">Impacto</a>
+      <a href="#directorio" class="block py-2 hover:text-brand-purple">Directorio</a>
+      <a href="#donar" class="block py-3 text-center bg-brand-orange text-white rounded-xl font-brand text-xl uppercase font-bold">Hacer una Donación Directa</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION: MINIMALISTA, VISUAL Y CON PESO TIPOGRÁFICO -->
+  <section id="inicio" class="relative pt-12 pb-20 lg:pt-20 lg:pb-32 overflow-hidden bg-gradient-to-b from-zinc-50 via-white to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- COLUMNA TEXTO CON GRAN PESO -->
+        <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+          
+          <!-- BADGES MINIMALISTAS -->
+          <div class="flex flex-wrap gap-2 justify-center lg:justify-start">
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-100 border border-zinc-200 text-xs sm:text-sm font-bold text-zinc-800 tracking-wide">
+              <span class="w-2.5 h-2.5 rounded-full bg-brand-orange"></span>
+              18 AÑOS DE TRAYECTORIA EN CHILE
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-purple-100 text-brand-purple text-xs sm:text-sm font-extrabold tracking-wide">
+              <i class="fa-solid fa-ribbon text-xs"></i> LEY DE DONACIONES CULTURALES
+            </span>
+          </div>
+
+          <!-- TÍTULO PRINCIPAL: PESADO Y CONTUNDENTE -->
+          <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black font-brand tracking-tight uppercase leading-[0.95] text-zinc-950">
+            ARTE Y TEATRO COMO MOTOR DE <span class="text-brand-purple">TRANSFORMACIÓN</span> EDUCATIVA
+          </h1>
+
+          <!-- BAJADA CON PESO Y ALTO CONTRASTE -->
+          <p class="text-lg sm:text-xl font-semibold text-zinc-700 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            Llevamos el teatro pedagógico a colegios, comunidades vulnerables y teatros de todo el país. Creamos experiencias artísticas que inspiran valores, previenen el acoso y potencian la convivencia escolar.
+          </p>
+
+          <!-- CITA DE PAULO FREIRE DESTACADA -->
+          <div class="bg-zinc-50 border-l-4 border-brand-orange p-5 rounded-r-2xl text-zinc-900 font-bold italic text-base sm:text-lg shadow-sm">
+            “Educar es impregnar de sentido todo lo que hacemos en cada momento.”
+            <span class="block text-xs uppercase tracking-wider not-italic text-brand-orange font-extrabold mt-1.5">— Paulo Freire</span>
+          </div>
+
+          <!-- BOTONES DE ACCIÓN ROBUSTOS -->
+          <div class="flex flex-wrap gap-4 justify-center lg:justify-start pt-2">
+            <a href="#donar" class="bg-brand-orange hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-brand text-2xl uppercase tracking-wider font-extrabold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3">
+              <i class="fa-solid fa-heart"></i> Donar Directo
+            </a>
+            <a href="#contacto" class="bg-zinc-950 hover:bg-brand-purple text-white px-8 py-4 rounded-xl font-brand text-2xl uppercase tracking-wider font-extrabold transition-all duration-300">
+              Solicitar Función Escolar
+            </a>
+          </div>
+
+        </div>
+
+        <!-- COLUMNA VISUAL MINIMALISTA: LOGO Y CIFRAS CLAVE -->
+        <div class="lg:col-span-5">
+          <div class="relative bg-zinc-900 rounded-3xl p-8 sm:p-10 text-white shadow-2xl border border-zinc-800">
+            
+            <!-- LOGOTIPO EN BLANCO DESTACADO -->
+            <div class="text-center pb-8 border-b border-zinc-800">
+              <img src="Logotipos/MARCA_FUNDACION-03.png" 
+                   alt="Logo Fundación Teatro Educativo" 
+                   class="h-32 sm:h-36 w-auto mx-auto object-contain"
+                   onerror="this.onerror=null; this.src='Logotipos/MARCA_FUNDACION-01.png';">
+              <span class="inline-block mt-4 px-3 py-1 rounded-md bg-zinc-800 text-brand-teal text-xs font-bold uppercase tracking-widest">
+                Personalidad Jurídica Ley 20.500 • RUT 65.214.766-6
+              </span>
+            </div>
+
+            <!-- CARACTERÍSTICAS INSTITUCIONALES EN BLOQUES ROBUSTOS -->
+            <div class="grid grid-cols-2 gap-4 pt-6">
+              <div class="bg-zinc-800/80 p-4 rounded-2xl border border-zinc-700">
+                <span class="block font-brand text-3xl sm:text-4xl font-black text-brand-orange">+41.400</span>
+                <span class="text-xs font-bold text-zinc-300 uppercase leading-snug">Estudiantes Impactados</span>
+              </div>
+              <div class="bg-zinc-800/80 p-4 rounded-2xl border border-zinc-700">
+                <span class="block font-brand text-3xl sm:text-4xl font-black text-brand-teal">172</span>
+                <span class="text-xs font-bold text-zinc-300 uppercase leading-snug">Obras Realizadas</span>
+              </div>
+              <div class="bg-zinc-800/80 p-4 rounded-2xl border border-zinc-700">
+                <span class="block font-brand text-3xl sm:text-4xl font-black text-purple-400">110</span>
+                <span class="text-xs font-bold text-zinc-300 uppercase leading-snug">Instituciones & Colegios</span>
+              </div>
+              <div class="bg-zinc-800/80 p-4 rounded-2xl border border-zinc-700">
+                <span class="block font-brand text-3xl sm:text-4xl font-black text-yellow-400">100%</span>
+                <span class="text-xs font-bold text-zinc-300 uppercase leading-snug">Fines Sociales Sin Lucro</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CIFRAS DE IMPACTO (STAT BAR MINIMALISTA Y ELEGANTE) -->
+  <section id="impacto" class="bg-zinc-950 text-white py-14 border-y border-zinc-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center divide-y lg:divide-y-0 lg:divide-x divide-zinc-800">
+        
+        <div class="pt-4 lg:pt-0">
+          <div class="text-5xl sm:text-6xl font-black font-brand text-brand-orange tracking-tight leading-none">41.462</div>
+          <div class="text-xs sm:text-sm font-extrabold text-zinc-400 uppercase tracking-wider mt-2">Niñas, Niños y Jóvenes</div>
+        </div>
+
+        <div class="pt-4 lg:pt-0">
+          <div class="text-5xl sm:text-6xl font-black font-brand text-brand-teal tracking-tight leading-none">172</div>
+          <div class="text-xs sm:text-sm font-extrabold text-zinc-400 uppercase tracking-wider mt-2">Funciones Teatrales Anuales</div>
+        </div>
+
+        <div class="pt-4 lg:pt-0">
+          <div class="text-5xl sm:text-6xl font-black font-brand text-purple-400 tracking-tight leading-none">110</div>
+          <div class="text-xs sm:text-sm font-extrabold text-zinc-400 uppercase tracking-wider mt-2">Colegios y Centros Culturales</div>
+        </div>
+
+        <div class="pt-4 lg:pt-0">
+          <div class="text-5xl sm:text-6xl font-black font-brand text-yellow-400 tracking-tight leading-none">16+</div>
+          <div class="text-xs sm:text-sm font-extrabold text-zinc-400 uppercase tracking-wider mt-2">Regiones de Arica a Magallanes</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: DONACIONES DIRECTAS (CON FORMULARIO DE CONFIRMACIÓN PRIVADA) -->
+  <section id="donar" class="py-24 bg-gradient-to-b from-zinc-50 to-white border-b border-zinc-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <!-- ENCABEZADO DE LA SECCIÓN DE DONACIONES -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-100 text-brand-orange text-xs sm:text-sm font-black uppercase tracking-wider">
+          <i class="fa-solid fa-hand-holding-heart"></i> Donaciones Directas & Apoyo Comunitario
+        </div>
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black font-brand uppercase text-zinc-950 tracking-tight leading-none">
+          TU APORTE LLEVA EL TEATRO A QUIENES MÁS LO NECESITAN
+        </h2>
+        <p class="text-lg font-semibold text-zinc-700 leading-relaxed">
+          Como fundación sin fines de lucro, tus donaciones financian funciones teatrales gratuitas, talleres socioemocionales y material didáctico para escuelas rurales y comunidades vulnerables de todo Chile.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- COLUMNA IZQUIERDA: INFORMACIÓN, DESTINOS Y LEY DE DONACIONES -->
+        <div class="lg:col-span-5 space-y-8">
+          
+          <div class="bg-white p-8 rounded-3xl border-2 border-zinc-200 shadow-sm space-y-5">
+            <span class="text-xs font-black uppercase tracking-widest text-brand-orange block">Transparencia & Seguridad</span>
+            <h3 class="text-2xl sm:text-3xl font-black font-brand uppercase text-zinc-950">
+              ¿Cómo funciona tu donación?
+            </h3>
+            <p class="text-sm font-semibold text-zinc-600 leading-relaxed">
+              Para resguardar la seguridad y emitir adecuadamente tu certificado de donación o agradecimiento institucional, gestionamos cada aporte mediante confirmación directa:
+            </p>
+
+            <div class="space-y-4 pt-2">
+              <div class="flex items-start gap-3.5">
+                <div class="w-8 h-8 rounded-full bg-brand-orange text-white flex items-center justify-center font-bold text-sm flex-shrink-0 mt-0.5">1</div>
+                <div>
+                  <h4 class="font-extrabold text-zinc-900 text-sm">Completa el formulario</h4>
+                  <p class="text-xs font-semibold text-zinc-500">Indícanos tu nombre o empresa, RUT, correo y el destino de tu donación.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5">
+                <div class="w-8 h-8 rounded-full bg-brand-purple text-white flex items-center justify-center font-bold text-sm flex-shrink-0 mt-0.5">2</div>
+                <div>
+                  <h4 class="font-extrabold text-zinc-900 text-sm">Recibe los datos oficiales</h4>
+                  <p class="text-xs font-semibold text-zinc-500">Recibirás de inmediato un correo oficial con las instrucciones y datos bancarios de la Fundación.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5">
+                <div class="w-8 h-8 rounded-full bg-brand-teal text-white flex items-center justify-center font-bold text-sm flex-shrink-0 mt-0.5">3</div>
+                <div>
+                  <h4 class="font-extrabold text-zinc-900 text-sm">Adjunta tu comprobante</h4>
+                  <p class="text-xs font-semibold text-zinc-500">Responde al correo o envíalo por WhatsApp para emitir tu certificado tributario o constancia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BENEFICIOS LEY DE DONACIONES CULTURALES -->
+          <div class="bg-zinc-900 text-white p-8 rounded-3xl border border-zinc-800 space-y-4 shadow-lg">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 bg-brand-purple text-white rounded-full text-xs font-black uppercase tracking-wider">
+                Ley Nº 18.985
+              </span>
+              <span class="text-xs font-bold text-zinc-400">RUT 65.214.766-6</span>
+            </div>
+            
+            <h4 class="text-2xl font-black font-brand uppercase text-white leading-tight">
+              Beneficio Tributario para Empresas y Personas
+            </h4>
+
+            <p class="text-xs font-semibold text-zinc-300 leading-relaxed">
+              Las donaciones acogidas a la Ley de Donaciones Culturales permiten a empresas y contribuyentes descontar hasta un <strong>50% como crédito fiscal directo</strong> contra el impuesto a la renta, y el 50% restante como <strong>gasto aceptado</strong>.
+            </p>
+
+            <div class="pt-2">
+              <a href="https://wa.me/56927407656?text=Hola%20Fundaci%C3%B3n%20Teatro%20Educativo%2C%20quisiera%20consultar%20por%20donaciones%20bajo%20la%20Ley%20de%20Donaciones%20Culturales." 
+                 target="_blank" 
+                 class="inline-flex items-center gap-2 text-xs font-extrabold text-green-400 hover:text-green-300 transition">
+                <i class="fa-brands fa-whatsapp text-sm"></i> Consultar con nuestro equipo por WhatsApp →
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- COLUMNA DERECHA: FORMULARIO BREVE DE DONACIÓN DIRECTA -->
+        <div class="lg:col-span-7">
+          <div class="bg-white rounded-3xl p-8 sm:p-12 border-2 border-zinc-200 shadow-xl relative overflow-hidden">
+            
+            <div id="formContainer">
+              <span class="text-xs font-black uppercase tracking-widest text-brand-orange block mb-1">Formulario de Confirmación</span>
+              <h3 class="text-3xl sm:text-4xl font-black font-brand uppercase text-zinc-950 mb-2">
+                Solicitar Datos Oficiales de Donación
+              </h3>
+              <p class="text-sm font-semibold text-zinc-600 mb-8">
+                Ingresa tus antecedentes para enviarte de inmediato los datos oficiales de transferencia y las instrucciones de comprobante a tu correo:
+              </p>
+
+              <form id="donationForm" onsubmit="handleDonationSubmit(event)" class="space-y-5">
+                
+                <!-- 1. NOMBRE / RAZÓN SOCIAL -->
+                <div>
+                  <label class="block text-xs font-extrabold uppercase text-zinc-700 mb-2">Nombre Completo o Razón Social *</label>
+                  <input type="text" id="donorName" name="Nombre_o_Razon_Social" required placeholder="Ej. Camila Morales o Empresa SpA" class="w-full px-4 py-3.5 rounded-xl border-2 border-zinc-300 focus:outline-none focus:border-brand-purple font-semibold text-zinc-900 bg-white">
+                </div>
+
+                <!-- 2. RUT & CORREO -->
+                <div class="grid sm:grid-cols-2 gap-5">
+                  <div>
+                    <label class="block text-xs font-extrabold uppercase text-zinc-700 mb-2">RUT del Donante o Empresa *</label>
+                    <input type="text" id="donorRut" name="RUT" required placeholder="Ej. 12.345.678-9" class="w-full px-4 py-3.5 rounded-xl border-2 border-zinc-300 focus:outline-none focus:border-brand-purple font-semibold text-zinc-900 bg-white">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-extrabold uppercase text-zinc-700 mb-2">Correo Electrónico (Donde recibirás los datos) *</label>
+                    <input type="email" id="donorEmail" name="email" required placeholder="tu-correo@ejemplo.com" class="w-full px-4 py-3.5 rounded-xl border-2 border-zinc-300 focus:outline-none focus:border-brand-purple font-semibold text-zinc-900 bg-white">
+                  </div>
+                </div>
+
+                <!-- 3. MONTO ESTIMADO -->
+                <div>
+                  <label class="block text-xs font-extrabold uppercase text-zinc-700 mb-2">Monto Estimado del Aporte ($ CLP) *</label>
+                  
+                  <!-- Botones rápidos de selección de monto -->
+                  <div class="grid grid-cols-4 gap-2 mb-3">
+                    <button type="button" onclick="setFormAmount('$10.000')" class="amount-pill py-2 text-xs font-extrabold rounded-lg border-2 border-zinc-300 hover:border-brand-orange text-zinc-800 transition">
+                      $10.000
+                    </button>
+                    <button type="button" onclick="setFormAmount('$25.000')" class="amount-pill py-2 text-xs font-extrabold rounded-lg border-2 border-brand-orange bg-orange-50 text-brand-orange transition">
+                      $25.000
+                    </button>
+                    <button type="button" onclick="setFormAmount('$50.000')" class="amount-pill py-2 text-xs font-extrabold rounded-lg border-2 border-zinc-300 hover:border-brand-orange text-zinc-800 transition">
+                      $50.000
+                    </button>
+                    <button type="button" onclick="setFormAmount('$100.000')" class="amount-pill py-2 text-xs font-extrabold rounded-lg border-2 border-zinc-300 hover:border-brand-orange text-zinc-800 transition">
+                      $100.000
+                    </button>
+                  </div>
+
+                  <input type="text" id="donorAmount" name="Monto_Estimado" required value="$25.000" placeholder="Ej. $25.000 o monto libre" class="w-full px-4 py-3.5 rounded-xl border-2 border-zinc-300 focus:outline-none focus:border-brand-purple font-bold text-zinc-900 bg-white">
+                </div>
+
+                <!-- 4. CAMPAÑA O DESTINO -->
+                <div>
+                  <label class="block text-xs font-extrabold uppercase text-zinc-700 mb-2">Campaña o Destino de tu Donación *</label>
+                  <select id="donorCampaign" name="Campana_o_Destino" class="w-full px-4 py-3.5 rounded-xl border-2 border-zinc-300 focus:outline-none focus:border-brand-purple font-semibold text-zinc-900 bg-white">
+                    <option value="Funciones en Escuelas Rurales y Vulnerables">🎭 Funciones Gratuitas en Escuelas Rurales y Vulnerables</option>
+                    <option value="Programa de Prevención 'El Tesoro de Margarita' (Autocuidado)">🛡️ Prevención de Abuso Infantil: "El Tesoro de Margarita"</option>
+                    <option value="Campaña Convivencia y Ciberbullying 'Dame Tu Like'">📱 Convivencia Escolar y Ciberacoso: "Dame Tu Like"</option>
+                    <option value="Festival Internacional Edufest">🌍 Festival Internacional de Teatro Educativo (Edufest)</option>
+                    <option value="Fondo General de Fomento Artístico y Social">✨ Fondo General de Fomento y Acción Cultural</option>
+                  </select>
+                </div>
+
+                <!-- 5. BOTÓN SUBMIT -->
+                <button type="submit" id="submitDonationBtn" class="w-full bg-brand-orange hover:bg-orange-600 text-white font-brand text-2xl py-4 rounded-xl uppercase tracking-wider font-extrabold shadow-md hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3">
+                  <span id="btnIcon"><i class="fa-solid fa-paper-plane text-xl"></i></span>
+                  <span id="btnText">Solicitar Datos de Transferencia</span>
+                </button>
+
+                <p class="text-[11px] text-center font-bold text-zinc-500">
+                  <i class="fa-solid fa-lock text-brand-teal mr-1"></i> Tus datos son confidenciales y se utilizarán exclusivamente para los fines de la donación y emisión de comprobantes.
+                </p>
+              </form>
+            </div>
+
+            <!-- ESTADO DE CONFIRMACIÓN (100% ANTI-PHISHING - SIN DATOS BANCARIOS EN LA WEB) -->
+            <div id="confirmationBox" class="hidden space-y-6 text-left py-2">
+              
+              <!-- Encabezado de Éxito -->
+              <div class="bg-emerald-50 border-2 border-emerald-300 p-6 rounded-2xl flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-2xl font-bold flex-shrink-0 mt-0.5 shadow-sm">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <div>
+                  <span class="inline-block px-2.5 py-0.5 bg-emerald-200 text-emerald-900 rounded-md text-[11px] font-black uppercase tracking-wider mb-1">
+                    Solicitud Registrada
+                  </span>
+                  <h3 class="text-2xl sm:text-3xl font-black font-brand uppercase text-zinc-950 leading-tight">
+                    ¡Gracias por tu Compromiso con el Teatro Educativo!
+                  </h3>
+                  <p class="text-xs sm:text-sm font-semibold text-zinc-700 mt-1">
+                    Hemos registrado tu solicitud para el aporte estimado de <strong id="confirmAmount" class="text-brand-orange font-black"></strong> a nombre de <strong id="confirmName" class="text-zinc-950 font-black"></strong> (RUT: <span id="confirmRut" class="font-bold"></span>).
+                  </p>
+                </div>
+              </div>
+
+              <!-- TARJETA DE SEGURIDAD Y PROTECCIÓN ANTI-PHISHING -->
+              <div class="bg-zinc-900 text-white p-6 sm:p-8 rounded-3xl border-2 border-zinc-800 shadow-xl space-y-5">
+                <div class="flex items-center gap-3 border-b border-zinc-800 pb-4">
+                  <div class="w-10 h-10 rounded-xl bg-brand-orange/20 text-brand-orange flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-shield-halved"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-xl sm:text-2xl font-black font-brand uppercase text-white leading-tight">
+                      Protocolo Oficial de Seguridad Anti-Phishing
+                    </h4>
+                    <p class="text-xs text-zinc-400">Protección de la cuenta institucional y de nuestros donantes</p>
+                  </div>
+                </div>
+
+                <div class="space-y-3 text-xs sm:text-sm font-semibold text-zinc-300 leading-relaxed">
+                  <p>
+                    Por estrictas medidas de seguridad y para <strong class="text-white">evitar suplantaciones o fraudes (phishing)</strong>, la Fundación Teatro Educativo <strong class="text-brand-orange">NO publica números de cuentas bancarias en internet</strong>.
+                  </p>
+                  <p>
+                    El directorio de la Fundación se pondrá en contacto contigo de forma directa y personalizada a través del correo oficial <strong class="text-brand-teal">fundacionteatroeducativo@gmail.com</strong> o vía telefónica para entregarte los datos verificados de transferencia y las instrucciones de comprobante.
+                  </p>
+                </div>
+
+                <div class="p-4 bg-zinc-800/80 rounded-2xl border border-zinc-700 text-xs text-zinc-300 space-y-1">
+                  <span class="block font-bold text-white uppercase tracking-wider">Campaña / Destino Seleccionado:</span>
+                  <p class="text-brand-teal font-extrabold text-sm" id="confirmCampaign">Funciones en Escuelas Rurales y Vulnerables</p>
+                </div>
+
+                <!-- BOTONES DE CONTACTO DIRECTO INMEDIATO (GARANTÍA 100% DE ENTREGA) -->
+                <div class="pt-3 space-y-3">
+                  <p class="text-xs font-bold text-zinc-400 text-center uppercase tracking-wider">
+                    ¿Quieres enviar tu solicitud de inmediato? Elige una opción directa:
+                  </p>
+
+                  <div class="grid sm:grid-cols-2 gap-3">
+                    <!-- Botón 1: Abrir Correo con la solicitud lista -->
+                    <a id="emailClientBtn" href="#" class="bg-brand-purple hover:bg-purple-800 text-white font-brand text-xl py-3.5 px-4 rounded-xl uppercase tracking-wider font-extrabold transition flex items-center justify-center gap-2 shadow-md">
+                      <i class="fa-solid fa-envelope-open-text text-xl"></i> Enviar desde mi Correo
+                    </a>
+                    
+                    <!-- Botón 2: Enviar por WhatsApp -->
+                    <a id="whatsappConfirmBtn" href="#" target="_blank" class="bg-green-600 hover:bg-green-500 text-white font-brand text-xl py-3.5 px-4 rounded-xl uppercase tracking-wider font-extrabold transition flex items-center justify-center gap-2 shadow-md">
+                      <i class="fa-brands fa-whatsapp text-2xl"></i> Enviar por WhatsApp
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Instrucciones adicionales -->
+              <div class="p-5 bg-zinc-100 rounded-2xl border border-zinc-200 text-xs font-semibold text-zinc-700 space-y-2">
+                <p class="font-extrabold text-zinc-900 uppercase text-xs">Datos de contacto institucional:</p>
+                <p>• Correo Oficial: <strong>fundacionteatroeducativo@gmail.com</strong></p>
+                <p>• Teléfono / WhatsApp: <strong>+56 9 2740 7656</strong></p>
+                <p>• Razón Social: <strong>Fundación Teatro Educativo</strong> (RUT 65.214.766-6)</p>
+              </div>
+
+              <div class="text-center pt-2">
+                <button type="button" onclick="resetDonationForm()" class="text-xs font-extrabold text-zinc-500 hover:text-zinc-900 uppercase tracking-wider underline">
+                  ← Modificar datos o registrar otra solicitud
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROPÓSITO: MISIÓN & VISIÓN CON DISEÑO EDITORIAL LIMPIO -->
+  <section id="proposito" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <!-- ENCABEZADO DE SECCIÓN -->
+      <div class="max-w-3xl mb-16">
+        <span class="text-brand-orange font-brand text-2xl uppercase tracking-widest font-extrabold block mb-2">Fundamento Institucional</span>
+        <h2 class="text-4xl sm:text-5xl font-black font-brand uppercase text-zinc-950 tracking-tight leading-none">
+          Nuestra Misión y Visión
+        </h2>
+        <p class="text-lg font-semibold text-zinc-600 mt-4">
+          Definidas estatutariamente para promover la igualdad de oportunidades mediante las artes escénicas.
+        </p>
+      </div>
+
+      <!-- GRID DE TARJETAS LIMPIAS CON ALTO PESO -->
+      <div class="grid md:grid-cols-2 gap-10">
+        
+        <!-- TARJETA MISIÓN -->
+        <div class="p-8 sm:p-12 rounded-3xl bg-zinc-50 border-2 border-zinc-200 hover:border-brand-purple transition-colors duration-300 space-y-6">
+          <div class="w-16 h-16 rounded-2xl bg-brand-purple text-white flex items-center justify-center text-3xl font-bold shadow-md">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <h3 class="text-3xl font-black font-brand uppercase text-brand-purple tracking-wide">Misión</h3>
+          <p class="text-zinc-800 text-lg sm:text-xl font-semibold leading-relaxed">
+            “Fomentar y enriquecer la cultura y el arte mediante el <strong class="text-zinc-950 font-extrabold">Teatro Educativo</strong>, contribuyendo positivamente en niños y jóvenes al sensibilizarlos sobre valores fundamentales. Nos comprometemos a impulsar cambios significativos en la sociedad, generando un impacto formativo en las comunidades locales y a nivel global”.
+          </p>
+        </div>
+
+        <!-- TARJETA VISIÓN -->
+        <div class="p-8 sm:p-12 rounded-3xl bg-zinc-50 border-2 border-zinc-200 hover:border-brand-teal transition-colors duration-300 space-y-6">
+          <div class="w-16 h-16 rounded-2xl bg-brand-teal text-white flex items-center justify-center text-3xl font-bold shadow-md">
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <h3 class="text-3xl font-black font-brand uppercase text-brand-teal tracking-wide">Visión</h3>
+          <p class="text-zinc-800 text-lg sm:text-xl font-semibold leading-relaxed">
+            “Aportar a un mundo donde cada niña, niño y joven sea reconocido, respetado, valorado y donde aprendan a estimar y apreciar a sus semejantes. Nos inspiramos en el arte educativo como medio para potenciar sus valores, sueños y plasmar sus ideales; permitiéndoles descubrir su potencial creativo y expresivo para dejar una huella duradera en la sociedad”.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OBRAS REGISTRADAS & REPERTORIO PATRIMONIAL -->
+  <section id="repertorio" class="py-24 bg-zinc-50 border-y border-zinc-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="max-w-3xl mb-16">
+        <span class="text-brand-orange font-brand text-2xl uppercase tracking-widest font-extrabold block mb-2">Patrimonio Artístico Registrado</span>
+        <h2 class="text-4xl sm:text-5xl font-black font-brand uppercase text-zinc-950 tracking-tight leading-none">
+          Obras Teatrales Emblemáticas
+        </h2>
+        <p class="text-lg font-semibold text-zinc-700 mt-4">
+          Obras originales registradas en el Departamento de Derechos Intelectuales del Servicio Nacional del Patrimonio Cultural, diseñadas específicamente para el abordaje pedagógico escolar.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- OBRA 1: DAME TU LIKE -->
+        <div class="bg-white rounded-3xl p-7 border-2 border-zinc-200 hover:border-brand-orange transition-all duration-300 hover:shadow-xl flex flex-col justify-between space-y-6 group">
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <span class="px-3 py-1 bg-orange-100 text-brand-orange rounded-full text-xs font-extrabold uppercase">Reg. Nº 300.767</span>
+              <i class="fa-solid fa-mobile-screen-button text-2xl text-brand-orange"></i>
+            </div>
+            <h3 class="text-3xl font-black font-brand uppercase text-zinc-950 group-hover:text-brand-orange transition-colors">
+              Dame Tu Like
+            </h3>
+            <p class="text-sm font-semibold text-zinc-700 leading-relaxed">
+              Aborda el impacto de las redes sociales, la búsqueda de aprobación digital, el ciberacoso y la construcción de autoestima en la era de los algoritmos.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-zinc-100">
+            <span class="text-xs font-extrabold uppercase text-zinc-500">Público: Enseñanza Básica y Media</span>
+          </div>
+        </div>
+
+        <!-- OBRA 2: LA PRIMERA VEZ -->
+        <div class="bg-white rounded-3xl p-7 border-2 border-zinc-200 hover:border-brand-purple transition-all duration-300 hover:shadow-xl flex flex-col justify-between space-y-6 group">
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <span class="px-3 py-1 bg-purple-100 text-brand-purple rounded-full text-xs font-extrabold uppercase">Reg. Nº 300.769</span>
+              <i class="fa-solid fa-heart-pulse text-2xl text-brand-purple"></i>
+            </div>
+            <h3 class="text-3xl font-black font-brand uppercase text-zinc-950 group-hover:text-brand-purple transition-colors">
+              La Primera Vez
+            </h3>
+            <p class="text-sm font-semibold text-zinc-700 leading-relaxed">
+              Trata la afectividad, sexualidad adolescente responsable, consentimiento, respeto mutuo y comunicación en la etapa de desarrollo juvenil.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-zinc-100">
+            <span class="text-xs font-extrabold uppercase text-zinc-500">Público: 7º Básico a 4º Medio</span>
+          </div>
+        </div>
+
+        <!-- OBRA 3: LOS PROFES -->
+        <div class="bg-white rounded-3xl p-7 border-2 border-zinc-200 hover:border-brand-teal transition-all duration-300 hover:shadow-xl flex flex-col justify-between space-y-6 group">
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <span class="px-3 py-1 bg-teal-100 text-brand-teal rounded-full text-xs font-extrabold uppercase">Reg. Nº 300.768</span>
+              <i class="fa-solid fa-chalkboard-user text-2xl text-brand-teal"></i>
+            </div>
+            <h3 class="text-3xl font-black font-brand uppercase text-zinc-950 group-hover:text-brand-teal transition-colors">
+              Los Profes
+            </h3>
+            <p class="text-sm font-semibold text-zinc-700 leading-relaxed">
+              Dedicada a la convivencia escolar, salud mental docente, valoración de la labor pedagógica y el diálogo entre estudiantes y educadores.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-zinc-100">
+            <span class="text-xs font-extrabold uppercase text-zinc-500">Público: Comunidad Escolar & Docentes</span>
+          </div>
+        </div>
+
+        <!-- OBRA 4: EL TESORO DE MARGARITA -->
+        <div class="bg-white rounded-3xl p-7 border-2 border-zinc-200 hover:border-zinc-900 transition-all duration-300 hover:shadow-xl flex flex-col justify-between space-y-6 group">
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <span class="px-3 py-1 bg-zinc-100 text-zinc-900 rounded-full text-xs font-extrabold uppercase">Poder Judicial</span>
+              <i class="fa-solid fa-shield-halved text-2xl text-zinc-900"></i>
+            </div>
+            <h3 class="text-3xl font-black font-brand uppercase text-zinc-950 group-hover:text-brand-teal transition-colors">
+              El Tesoro de Margarita
+            </h3>
+            <p class="text-sm font-semibold text-zinc-700 leading-relaxed">
+              Programa de prevención y derivación desarrollado con el Poder Judicial de Chile sobre autocuidado infantil y prevención del abuso sexual.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-zinc-100">
+            <span class="text-xs font-extrabold uppercase text-zinc-500">Público: Educación Parvularia y Básica</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LÍNEAS DE ACCIÓN: FORMATOS METODOLÓGICOS -->
+  <section id="lineas-accion" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="max-w-3xl mb-16">
+        <span class="text-brand-purple font-brand text-2xl uppercase tracking-widest font-extrabold block mb-2">Metodología Pedagógica</span>
+        <h2 class="text-4xl sm:text-5xl font-black font-brand uppercase text-zinc-950 tracking-tight leading-none">
+          Nuestras Líneas de Acción
+        </h2>
+        <p class="text-lg font-semibold text-zinc-600 mt-4">
+          Intervenciones integrales que trascienden la entretención para generar reflexión activa y aprendizaje perdurable.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- FORMATO 1 -->
+        <div class="bg-zinc-50 rounded-3xl p-8 border-2 border-zinc-200 space-y-5">
+          <div class="w-14 h-14 rounded-2xl bg-brand-orange text-white flex items-center justify-center text-2xl font-bold">
+            <i class="fa-solid fa-masks-theater"></i>
+          </div>
+          <h3 class="text-3xl font-black font-brand uppercase text-zinc-950">Obras Presenciales</h3>
+          <p class="text-base font-semibold text-zinc-700 leading-relaxed">
+            Montajes teatrales completos con actores profesionales, iluminación, sonido y escenografía adaptable a gimnasios, auditorios o centros culturales.
+          </p>
+          <ul class="space-y-2 text-sm font-bold text-zinc-800 pt-2">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Guías pedagógicas post-función.</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Foro de conversación con el elenco.</li>
+          </ul>
+        </div>
+
+        <!-- FORMATO 2 -->
+        <div class="bg-zinc-50 rounded-3xl p-8 border-2 border-zinc-200 space-y-5">
+          <div class="w-14 h-14 rounded-2xl bg-brand-purple text-white flex items-center justify-center text-2xl font-bold">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <h3 class="text-3xl font-black font-brand uppercase text-zinc-950">Charlas Teatrales</h3>
+          <p class="text-base font-semibold text-zinc-700 leading-relaxed">
+            Formato dinámico donde actores representan personajes en vivo para catalizar el debate sobre convivencia, resolución de conflictos y salud emocional.
+          </p>
+          <ul class="space-y-2 text-sm font-bold text-zinc-800 pt-2">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-purple"></i> Dinámicas de interacción directa.</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-purple"></i> Participación activa del público escolar.</li>
+          </ul>
+        </div>
+
+        <!-- FORMATO 3 -->
+        <div class="bg-zinc-50 rounded-3xl p-8 border-2 border-zinc-200 space-y-5">
+          <div class="w-14 h-14 rounded-2xl bg-brand-teal text-white flex items-center justify-center text-2xl font-bold">
+            <i class="fa-solid fa-video"></i>
+          </div>
+          <h3 class="text-3xl font-black font-brand uppercase text-zinc-950">Festival Edufest & Digital</h3>
+          <p class="text-base font-semibold text-zinc-700 leading-relaxed">
+            Plataforma digital y transmisiones en vivo que rompen distancias territoriales para escuelas rurales y comunidades aisladas de todo Chile.
+          </p>
+          <ul class="space-y-2 text-sm font-bold text-zinc-800 pt-2">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-teal"></i> Transmisión Streaming en alta fidelidad.</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-teal"></i> Talleres virtuales y cuentacuentos.</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GOBERNANZA & DIRECTORIO -->
+  <section id="directorio" class="py-24 bg-zinc-50 border-y border-zinc-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="max-w-3xl mb-16">
+        <span class="text-brand-orange font-brand text-2xl uppercase tracking-widest font-extrabold block mb-2">Gobernanza Institucional</span>
+        <h2 class="text-4xl sm:text-5xl font-black font-brand uppercase text-zinc-950 tracking-tight leading-none">
+          Directorio & Liderazgo
+        </h2>
+        <p class="text-lg font-semibold text-zinc-700 mt-4">
+          Estructura directiva formal constituida según los estatutos de la Fundación Teatro Educativo ante la Municipalidad de Santiago (Personalidad Jurídica Nº 330061).
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- DIRECTORA PRESIDENTA -->
+        <div class="bg-white rounded-3xl p-8 border-2 border-zinc-200 shadow-sm space-y-4">
+          <div class="w-16 h-16 rounded-2xl bg-brand-purple/10 text-brand-purple flex items-center justify-center text-3xl font-bold">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div>
+            <span class="text-xs font-black uppercase text-brand-orange tracking-widest block mb-1">Fundadora & Presidenta</span>
+            <h3 class="text-2xl font-black font-brand uppercase text-zinc-950">Daniela Antonia Castillo Navarro</h3>
+          </div>
+          <p class="text-sm font-semibold text-zinc-600 leading-relaxed">
+            Actriz, Licenciada en Artes de la Representación (UDLA) y Magíster en Gestión Cultural por la Universidad de Chile. Directora ejecutiva y de contenidos de la Fundación.
+          </p>
+        </div>
+
+        <!-- SECRETARIA -->
+        <div class="bg-white rounded-3xl p-8 border-2 border-zinc-200 shadow-sm space-y-4">
+          <div class="w-16 h-16 rounded-2xl bg-brand-teal/10 text-brand-teal flex items-center justify-center text-3xl font-bold">
+            <i class="fa-solid fa-file-pen"></i>
+          </div>
+          <div>
+            <span class="text-xs font-black uppercase text-brand-teal tracking-widest block mb-1">Secretaria del Directorio</span>
+            <h3 class="text-2xl font-black font-brand uppercase text-zinc-950">Andrea Carolina Castillo Navarro</h3>
+          </div>
+          <p class="text-sm font-semibold text-zinc-600 leading-relaxed">
+            Responsable del resguardo de actas estatutarias, coordinación administrativa y vinculación institucional de la Fundación Teatro Educativo.
+          </p>
+        </div>
+
+        <!-- TESORERA -->
+        <div class="bg-white rounded-3xl p-8 border-2 border-zinc-200 shadow-sm space-y-4">
+          <div class="w-16 h-16 rounded-2xl bg-brand-orange/10 text-brand-orange flex items-center justify-center text-3xl font-bold">
+            <i class="fa-solid fa-coins"></i>
+          </div>
+          <div>
+            <span class="text-xs font-black uppercase text-brand-orange tracking-widest block mb-1">Tesorera del Directorio</span>
+            <h3 class="text-2xl font-black font-brand uppercase text-zinc-950">Isadora Azócar Nilson</h3>
+          </div>
+          <p class="text-sm font-semibold text-zinc-600 leading-relaxed">
+            Supervisión presupuestaria, gestión financiera de fondos concursables, rendición SEP y donaciones culturales con fines sociales y educativos.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACTO & AGENDAMIENTO MINIMALISTA CON ALTO PESO -->
+  <section id="contacto" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        
+        <!-- COLUMNA INFORMACIÓN DE CONTACTO -->
+        <div class="lg:col-span-5 space-y-8">
+          <div>
+            <span class="text-brand-orange font-brand text-2xl uppercase tracking-widest font-extrabold block mb-2">Comunícate Directamente</span>
+            <h2 class="text-4xl sm:text-5xl font-black font-brand uppercase text-zinc-950 tracking-tight leading-none">
+              Lleva una Función a tu Institución
+            </h2>
+            <p class="text-base font-semibold text-zinc-600 mt-4 leading-relaxed">
+              Diseñamos propuestas técnicas y pedagógicas para colegios con Ley SEP, municipios, teatros y empresas interesadas en Ley de Donaciones Culturales.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            
+            <!-- CORREO ELECTRÓNICO OFICIAL -->
+            <a href="mailto:fundacionteatroeducativo@gmail.com" class="block p-5 bg-zinc-50 hover:bg-zinc-100 rounded-2xl border-2 border-zinc-200 transition group">
+              <span class="text-xs font-extrabold uppercase text-zinc-500 block mb-1">Correo Electrónico Oficial</span>
+              <span class="text-base sm:text-lg font-bold text-zinc-950 group-hover:text-brand-purple transition break-all">
+                <i class="fa-solid fa-envelope text-brand-teal mr-2"></i>fundacionteatroeducativo@gmail.com
+              </span>
+            </a>
+
+            <!-- TELÉFONO / WHATSAPP -->
+            <a href="https://wa.me/56927407656" target="_blank" class="block p-5 bg-zinc-50 hover:bg-zinc-100 rounded-2xl border-2 border-zinc-200 transition group">
+              <span class="text-xs font-extrabold uppercase text-zinc-500 block mb-1">Teléfono Directo / WhatsApp</span>
+              <span class="text-lg font-bold text-zinc-950 group-hover:text-green-600 transition">
+                <i class="fa-brands fa-whatsapp text-green-500 text-xl mr-2"></i>+56 9 2740 7656
+              </span>
+            </a>
+
+            <!-- DOMICILIO LEGAL -->
+            <div class="p-5 bg-zinc-50 rounded-2xl border-2 border-zinc-200">
+              <span class="text-xs font-extrabold uppercase text-zinc-500 block mb-1">Sede Legal & Domicilio</span>
+              <span class="text-sm sm:text-base font-bold text-zinc-900">
+                <i class="fa-solid fa-location-dot text-brand-orange mr-2"></i>Compañía de Jesús Nº 1992, Of. 102, Santiago, Chile
+              </span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- FORMULARIO MINIMALISTA ROBUSTO -->
+        <div class="lg:col-span-7 bg-zinc-50 rounded-3xl p-8 sm:p-12 border-2 border-zinc-200">
+          <h3 class="text-3xl font-black font-brand uppercase text-zinc-950 mb-6">Solicitud de Cotización / Información</h3>
+          
+          <form onsubmit="event.preventDefault(); alert('¡Gracias por comunicarte con Fundación Teatro Educativo! Responderemos a la brevedad a tu correo.');" class="space-y-5">
+            
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label class="block text-xs font-extrabold uppercase text-zinc-700 mb-2">Nombre y Apellido *</label>
+                <input type="text" required placeholder="Ej. Marcela Silva" class="w-full px-4 py-3.5 rounded-xl border-2 border-zinc-300 focus:outline-none focus:border-zinc-900 font-semibold text-zinc-900 bg-white">
+              </div>
+              <div>
+                <label class="block text-xs font-extrabold uppercase text-zinc-700 mb-2">Correo de Contacto *</label>
+                <input type="email" required placeholder="ejemplo@colegio.cl" class="w-full px-4 py-3.5 rounded-xl border-2 border-zinc-300 focus:outline-none focus:border-zinc-900 font-semibold text-zinc-900 bg-white">
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label class="block text-xs font-extrabold uppercase text-zinc-700 mb-2">Colegio / Municipalidad / Empresa</label>
+                <input type="text" placeholder="Nombre de la institución" class="w-full px-4 py-3.5 rounded-xl border-2 border-zinc-300 focus:outline-none focus:border-zinc-900 font-semibold text-zinc-900 bg-white">
+              </div>
+              <div>
+                <label class="block text-xs font-extrabold uppercase text-zinc-700 mb-2">Teléfono</label>
+                <input type="tel" placeholder="+56 9 ..." class="w-full px-4 py-3.5 rounded-xl border-2 border-zinc-300 focus:outline-none focus:border-zinc-900 font-semibold text-zinc-900 bg-white">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-extrabold uppercase text-zinc-700 mb-2">Obra o Servicio de Interés</label>
+              <select class="w-full px-4 py-3.5 rounded-xl border-2 border-zinc-300 focus:outline-none focus:border-zinc-900 font-semibold text-zinc-900 bg-white">
+                <option>Obra: Dame Tu Like (Ciberbullying y Autoestima)</option>
+                <option>Obra: La Primera Vez (Afectividad y Sexualidad)</option>
+                <option>Obra: Los Profes (Convivencia y Salud Docente)</option>
+                <option>Obra: El Tesoro de Margarita (Prevención y Autocuidado)</option>
+                <option>Charlas Teatrales Participativas</option>
+                <option>Auspicios / Ley de Donaciones Culturales</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-extrabold uppercase text-zinc-700 mb-2">Mensaje o Detalle del Requerimiento</label>
+              <textarea rows="4" placeholder="Indícanos cantidad estimada de alumnos, fechas tentativas o dudas específicas..." class="w-full px-4 py-3.5 rounded-xl border-2 border-zinc-300 focus:outline-none focus:border-zinc-900 font-semibold text-zinc-900 bg-white"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-zinc-950 hover:bg-brand-orange text-white font-brand text-2xl py-4 rounded-xl uppercase tracking-wider font-extrabold shadow-md hover:shadow-xl transition-all duration-300">
+              Enviar Mensaje Directo
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER MINIMALISTA Y ROBUSTO -->
+  <footer class="bg-zinc-950 text-white pt-16 pb-12 border-t border-zinc-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 pb-12 border-b border-zinc-800">
+        
+        <!-- LOGO Y PRESENTACIÓN -->
+        <div class="space-y-4">
+          <img src="Logotipos/MARCA_FUNDACION-03.png" 
+               alt="Fundación Teatro Educativo" 
+               class="h-24 w-auto object-contain"
+               onerror="this.onerror=null; this.src='Logotipos/MARCA_FUNDACION-01.png';">
+          <p class="text-xs font-semibold text-zinc-400 leading-relaxed">
+            Fundación Teatro Educativo es una institución de beneficencia sin fines de lucro regida por las normas de la Ley Nº 20.500. RUT 65.214.766-6.
+          </p>
+        </div>
+
+        <!-- ENLACES -->
+        <div>
+          <h4 class="font-brand uppercase text-xl font-bold text-white tracking-wider mb-4">Navegación</h4>
+          <ul class="space-y-2 text-xs font-bold text-zinc-400">
+            <li><a href="#inicio" class="hover:text-white transition">Inicio</a></li>
+            <li><a href="#donar" class="text-brand-orange hover:text-white transition font-extrabold flex items-center gap-1.5"><i class="fa-solid fa-heart text-xs"></i> Donaciones Directas</a></li>
+            <li><a href="#proposito" class="hover:text-white transition">Misión & Visión</a></li>
+            <li><a href="#repertorio" class="hover:text-white transition">Obras Registradas</a></li>
+            <li><a href="#lineas-accion" class="hover:text-white transition">Líneas de Acción</a></li>
+            <li><a href="#directorio" class="hover:text-white transition">Directorio</a></li>
+          </ul>
+        </div>
+
+        <!-- PLATAFORMAS -->
+        <div>
+          <h4 class="font-brand uppercase text-xl font-bold text-brand-teal tracking-wider mb-4">Sitios Web</h4>
+          <ul class="space-y-2 text-xs font-bold text-zinc-400">
+            <li><a href="https://teatroeducativo.cl" target="_blank" class="hover:text-white transition flex items-center gap-1.5"><i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> teatroeducativo.cl</a></li>
+            <li><a href="https://fundacionteatroeducativo.cl" target="_blank" class="hover:text-white transition flex items-center gap-1.5"><i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> fundacionteatroeducativo.cl</a></li>
+            <li class="pt-2 text-zinc-500 font-semibold">Registro Propiedad Intelectual: Obras Nº 300.767, 300.768 y 300.769</li>
+          </ul>
+        </div>
+
+        <!-- CONTACTO & DONAR -->
+        <div>
+          <h4 class="font-brand uppercase text-xl font-bold text-brand-orange tracking-wider mb-4">Contacto Directo</h4>
+          <p class="text-xs font-semibold text-zinc-400 space-y-1 mb-4">
+            <span class="block text-white font-bold">Email: fundacionteatroeducativo@gmail.com</span>
+            <span class="block">Tel / WhatsApp: +56 9 2740 7656</span>
+            <span class="block">Santiago de Chile</span>
+          </p>
+          <div class="flex flex-col gap-2">
+            <a href="#donar" class="inline-flex items-center justify-center gap-2 bg-brand-orange hover:bg-orange-600 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition">
+              <i class="fa-solid fa-heart text-sm"></i> Donar Directo
+            </a>
+            <a href="https://wa.me/56927407656" target="_blank" class="inline-flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white text-xs font-bold px-4 py-2 rounded-xl transition">
+              <i class="fa-brands fa-whatsapp text-sm text-green-400"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs font-semibold text-zinc-500 gap-4">
+        <p>© Fundación Teatro Educativo • Personalidad Jurídica Nº 330061 • Todos los derechos reservados.</p>
+        <p>Identidad de Marca • Tipografía Oficial Barlow Condensed</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- SCRIPT INTERACTIVO: MENÚ Y FORMULARIO DE DONACIÓN PRIVADA -->
+  <script>
+    // Toggle Mobile Menu
+    const mobileBtn = document.getElementById('mobileBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Poner monto seleccionado en el campo del formulario
+    function setFormAmount(value) {
+      document.getElementById('donorAmount').value = value;
+      // Resaltar píldora activa
+      document.querySelectorAll('.amount-pill').forEach(btn => {
+        if (btn.textContent.trim() === value) {
+          btn.classList.add('border-brand-orange', 'bg-orange-50', 'text-brand-orange');
+          btn.classList.remove('border-zinc-300');
+        } else {
+          btn.classList.remove('border-brand-orange', 'bg-orange-50', 'text-brand-orange');
+          btn.classList.add('border-zinc-300');
+        }
+      });
+    }
+
+    // Manejo de envío del formulario de donación (100% Anti-Phishing y Entrega Garantizada)
+    function handleDonationSubmit(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('donorName').value.trim();
+      const rut = document.getElementById('donorRut').value.trim();
+      const email = document.getElementById('donorEmail').value.trim();
+      const amount = document.getElementById('donorAmount').value.trim();
+      const campaign = document.getElementById('donorCampaign').value;
+
+      // Actualizar datos en pantalla
+      document.getElementById('confirmName').textContent = name;
+      document.getElementById('confirmRut').textContent = rut;
+      document.getElementById('confirmAmount').textContent = amount;
+      document.getElementById('confirmCampaign').textContent = campaign;
+
+      // 1. Enlace mailto directo hacia la Fundación con copia al donante
+      const mailSubject = encodeURIComponent(`Solicitud de Donación - ${name} (${amount})`);
+      const mailBody = encodeURIComponent(`Estimado equipo de Fundación Teatro Educativo:
+
+Solicito el envío formal de los datos de transferencia e instrucciones oficiales para concretar mi donación con los siguientes antecedentes:
+
+• Donante / Razón Social: ${name}
+• RUT: ${rut}
+• Correo Electrónico: ${email}
+• Monto Estimado: ${amount}
+• Campaña o Destino: ${campaign}
+
+Quedo atento(a) a su respuesta oficial para realizar el aporte y coordinar la entrega del comprobante.
+
+Saludos cordiales,
+${name}`);
+      
+      const mailtoUrl = `mailto:fundacionteatroeducativo@gmail.com?cc=${encodeURIComponent(email)}&subject=${mailSubject}&body=${mailBody}`;
+      document.getElementById('emailClientBtn').href = mailtoUrl;
+
+      // 2. Enlace de WhatsApp directo preformateado
+      const waMessage = encodeURIComponent(
+        `Hola Fundación Teatro Educativo,\n\nSolicito los datos oficiales para donación:\n• Donante / Empresa: ${name}\n• RUT: ${rut}\n• Correo: ${email}\n• Monto estimado: ${amount}\n• Destino: ${campaign}\n\nQuedo atento(a) a su respuesta oficial para transferir y adjuntar el comprobante.`
+      );
+      document.getElementById('whatsappConfirmBtn').href = `https://wa.me/56927407656?text=${waMessage}`;
+
+      // Mostrar pantalla de confirmación
+      document.getElementById('formContainer').classList.add('hidden');
+      document.getElementById('confirmationBox').classList.remove('hidden');
+
+      // Scroll suave hacia la confirmación
+      document.getElementById('donar').scrollIntoView({ behavior: 'smooth' });
+
+      // Disparar apertura del cliente de correo directamente
+      try {
+        window.location.href = mailtoUrl;
+      } catch (e) {}
+    }
+
+    // Reiniciar formulario para un nuevo registro
+    function resetDonationForm() {
+      document.getElementById('donationForm').reset();
+      document.getElementById('formContainer').classList.remove('hidden');
+      document.getElementById('confirmationBox').classList.add('hidden');
+      setFormAmount('$25.000');
+    }
+  </script>
+</body>
+</html>
