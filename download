@@ -1,0 +1,21 @@
+# Documentos Privados y Legales (Protección de Datos)
+Documentos Legales-Fundación Teatro Educativo/
+Documentos Legales*
+*.docx
+*.pdf
+*Contrato*
+*Firma*
+*cartola*
+*Certificado*
+*E-RUT*
+*Estatuto*
+
+# Archivos de Sistema y Temporales
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.log
+.vscode/
+.idea/
+scratch/
